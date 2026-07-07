@@ -1,0 +1,5 @@
+# Federal Policy Intelligence (fpi) -- unified CLI merging P33/P37/P65.
+# Shared core (Step 1) needs only anthropic + pytest; the domain tools add
+# their own deps (click, rich, requests, pandas, python-dotenv) in Step 2.
+anthropic>=0.52.0
+pytest>=8.0.0
