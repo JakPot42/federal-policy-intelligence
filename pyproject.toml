@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "federal-policy-intelligence"
+version = "0.1.0"
+description = "Unified CLI merging Rulemaking Comment Analyzer (P33), AI Policy Impact Simulator (P37), and Regulatory Velocity Tracker (P65)."
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.52.0",
+    "click>=8.1",
+    "rich>=13.0",
+    "requests>=2.31",
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+fpi = "fpi.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["fpi*"]
+
+[tool.setuptools.package-data]
+"fpi.policy" = ["corpus/*.txt"]
