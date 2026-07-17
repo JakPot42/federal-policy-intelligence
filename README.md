@@ -1,9 +1,7 @@
 # Federal Policy Intelligence (`fpi`)
 
 A unified command-line toolkit for **federal regulatory and policy analysis**,
-merging three previously standalone tools into one CLI on a shared core.
-Phase 6, Cluster 6 (the final cluster) of the defense/national-security
-portfolio.
+combining three tools into one CLI on a shared core.
 
 ```
 fpi comments   Rulemaking Comment Analyzer   -- Regulations.gov public comments
@@ -17,7 +15,7 @@ Set `DEMO_MODE=False` (and provide keys) for live data.
 
 ## The three tools
 
-### `fpi comments` -- Rulemaking Comment Analyzer (was P33)
+### `fpi comments` -- Rulemaking Comment Analyzer
 Ingests public comments for a Regulations.gov docket, classifies each by theme,
 stakeholder type, and stance (Claude extracts; deterministic logic clusters),
 and generates a structured government decision memorandum.
@@ -29,7 +27,7 @@ fpi comments browse DoD-2023-OS-0063 --stance OPPOSE --stakeholder INDUSTRY
 fpi comments memo DoD-2023-OS-0063
 ```
 
-### `fpi policy` -- AI Policy Impact Simulator (was P37)
+### `fpi policy` -- AI Policy Impact Simulator
 Paste draft AI policy language; four stakeholder personas react, unintended
 consequences are flagged, and the draft is scored against NIST AI RMF and the
 EU AI Act -- **every citation verified against a real indexed corpus** (NIST AI
@@ -43,7 +41,7 @@ fpi policy search "facial recognition"
 fpi policy corpus                              # list everything it can cite
 ```
 
-### `fpi velocity` -- Regulatory Velocity Tracker (was P65)
+### `fpi velocity` -- Regulatory Velocity Tracker
 Measures how fast defense regulations are changing -- publication rate vs. a
 rolling baseline (z-score) per domain (DFARS, CMMC, ITAR, BIS, SEAD) from the
 Federal Register API.
