@@ -93,6 +93,6 @@ OEM console).
 
 ## Provenance
 
-Merges `JakPot42/comment-analyzer` (P33), `JakPot42/ai-policy-simulator` (P37),
-and `JakPot42/regulatory-velocity` (P65). All three remain independent,
+Merges `JakPot42/comment-analyzer`, `JakPot42/ai-policy-simulator`,
+and `JakPot42/regulatory-velocity`. All three remain independent,
 separately-runnable standalone repos; this toolkit adds a unified CLI on top.
